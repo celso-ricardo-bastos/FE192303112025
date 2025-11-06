@@ -1,20 +1,49 @@
 /* Formatando a index */
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-.logo {
-    background-color: blue;
+.menu-itens {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
 }
 
-.menu {
-    background-color: blueviolet;
+.item {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
 }
 
-.get-a-quote {
-    background-color: aquamarine;
+/* .item:hover {
+    background-color: aqua;
+} */
+
+.menu-itens li {
+    /* border: 1px red solid; */
+    margin: 1px;
+}
+
+.btn-green {
+    background-color: #36B864;
+    border: transparent;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    background-color: #1a9344;
 }
 
 
