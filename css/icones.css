@@ -1,0 +1,16 @@
+.icone {
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+}
+
+.flecha::after {
+    content: "\f0a9";
+    color: rgb(0, 39, 67);
+}
+
+.flecha:hover::after {
+    content: "\f0a9";
+    color: rgb(0, 39, 67);
+    padding-left: 10px;
+}
+
