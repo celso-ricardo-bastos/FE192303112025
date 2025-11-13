@@ -11,7 +11,7 @@ html {
 }
 
 .clean-content {
-    border: #000000 1px solid;
+    /* border: #000000 1px solid; */
     width: 70%;
     margin: auto;
 }

@@ -9,3 +9,5 @@
  - git commit -m "comentario"
  - git push
  
+## Livros
+ - Lógica de Programação: [https://www.amazon.com.br/Logica-Programacao-Eberspacher-H-Forbellone/dp/8534611246]

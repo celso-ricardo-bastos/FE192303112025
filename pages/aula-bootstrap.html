@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Bootstrap</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+
+    <style>
+        /*
+        Breakpoint          Class infix     Dimensions
+        X-Small             None            <576px
+        Small               sm              ≥576px
+        Medium              md              ≥768px
+        Large               lg              ≥992px
+        Extra large         xl              ≥1200px
+        Extra extra large   xxl             ≥1400px
+        */
+        /* .col {border: 1px solid #000} */
+        .bg-color-test {
+            /* background-color: aqua; */
+            background-color: rgb(100, 0, 13) !important;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container bg-primary-subtle bg-color-test">
+            <h1 class="text-md-center">Aula de Bootstrap</h1>
+            <div class="row">
+                <div class="col col-lg-4 col-sm-6">
+                    <div class="card m-auto">
+                        <img src="../img/service1.png" alt="" class="m-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quos.</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#test">Lorem, ipsum.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-sm-6">
+                    <div class="card m-auto">
+                        <img src="../img/service1.png" alt="" class="m-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quos.</p>
+                            <a href="#" class="btn btn-primary">Lorem, ipsum.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 col-sm-6">
+                    <div class="card m-auto">
+                        <img src="../img/service1.png" alt="" class="m-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quos.</p>
+                            <a href="#" class="btn btn-primary">Lorem, ipsum.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Modal -->
+        <div class="modal fade" id="test" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, asperiores. Eligendi excepturi, illum rem alias velit neque quisquam debitis suscipit eos consequatur iure tempora ea fugit laborum porro ab sequi, natus corporis cumque saepe optio nam unde dolor? Necessitatibus quia ut adipisci quidem eum amet doloribus ullam dolorum porro nulla.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/bootstrap.esm.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>
