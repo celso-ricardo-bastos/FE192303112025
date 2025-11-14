@@ -25,19 +25,9 @@ console.log(valorCurso - 10.00);
 console.log(valorCurso / 10.00);
 console.log(valorCurso * 10.00);
 
-var idade = 10;
+var idade = 20;
 var soma;
 
 soma = --idade;
 
-
-
 console.log(soma)
-
-
-
-
-
-
-
-
