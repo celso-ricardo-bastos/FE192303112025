@@ -17,6 +17,14 @@
         .borda-10 {
             border: solid 10px red;
         }
+        .erro {
+            border: solid 2px rgb(235, 132, 132);
+            outline: solid 2px rgb(235, 132, 132);
+        }
+        .erro:focus {
+            border: solid 2px rgb(235, 132, 132);
+            outline: solid 2px rgb(235, 132, 132);
+        }
     </style>
 </head>
 
@@ -135,7 +143,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form method="get" action="http://www.teste.com.br/dados/">
+            <form id="form-cliente" method="post" action="http://localhost:3001/cliente">
                 <div class="mb-3">
                     <label for="recipient-name" class="col-form-label">Nome:</label>
                     <input type="text" class="form-control" id="recipient-name" name="nome">
@@ -145,35 +153,11 @@
                     <label for="message-text" class="col-form-label">Mensagem:</label>
                     <textarea class="form-control" id="message-text" name="mensagem"></textarea>
                 </div>
-                <div class="mb-3">
-                    <label for="estado">Selecione seu estado</label>
-                
-                    <select class="form-control" name="estado" id="estado" class="col-form-label">
-                        <option value="0">-- select --</option>
-                        <option value="sp">São Paulo</option>
-                        <option value="mg">Minas Gerais</option>
-                    </select>
-                </div>
-
-                <div class="mb-3">
-                    senha: <input required class="form-control" type="password" name="senha"  placeholder="sua senha">
-                </div>
-                <div class="mb-3">
-                    conrtato: <input type="checkbox" name="contrato" value="sim">
-                </div>
-
-                <div class="mb-3">
-                    Email: <input required class="form-control" type="email" name="email"  placeholder="seu email">
-                </div>
-
-            
-                <button class="btn btn-primary">Enviar</button>
-
             </form>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Enviar</button>
+            <button type="button" class="btn btn-primary" data-submit-btn="btn">Enviar</button>
         </div>
         </div>
     </div>
@@ -188,6 +172,6 @@
     <script src="js/consumer.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
-
+    <script src="js/send.form.js"></script>
 </body>
 </html>
