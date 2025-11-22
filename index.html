@@ -148,10 +148,23 @@
                     <label for="recipient-name" class="col-form-label">Nome:</label>
                     <input type="text" class="form-control" id="recipient-name" name="nome">
                 </div>
+
+                <div class="mb-3">
+                    <label for="recipient-cep" class="col-form-label">Cep:</label>
+                    <input type="text" class="form-control" id="recipient-cep" name="cep">
+                </div>
+
+                <div class="mb-3">
+                    <label for="recipient-logradouro" class="col-form-label">Logradouro:</label>
+                    <input disabled type="text" class="form-control" id="recipient-logradouro" name="logradouro">
+                </div>
                 
                 <div class="mb-3">
                     <label for="message-text" class="col-form-label">Mensagem:</label>
                     <textarea class="form-control" id="message-text" name="mensagem"></textarea>
+                </div>
+                <div class="mb-3 text-center" data-resposta="menssagem">
+                    
                 </div>
             </form>
         </div>
@@ -173,5 +186,38 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/send.form.js"></script>
+
+    <script>
+        console.log('Primeira execução');
+        setTimeout(function(){console.log('Timer')}, 5000);
+        console.log('Segunda execução');
+
+        function myPromise(nota){
+            return new Promise(function(resolve, reject) {
+
+                nota >= 7 ? 
+                resolve('aprovado') 
+                : 
+                reject('Reprovado')
+                
+            });
+        }
+
+        async function exec() {
+            try {
+                const teste = await myPromise(5);
+                console.log(teste);
+            }
+            catch(e) {
+                console.log(e);    
+            }
+            
+        }
+
+        exec()
+
+        
+
+    </script>
 </body>
 </html>

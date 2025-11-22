@@ -26,8 +26,8 @@ app.get('/cliente', (request, response) => {
 
 app.post('/cliente', (request, response) => {
     console.log("Dados: ", request.body)
-    fs.writeFileSync('teste.json', JSON.stringify(request.query))
-    response.json({status: 'sucesso'})
+    fs.writeFileSync('teste.json', JSON.stringify(request.body))
+    response.status(200).json({status: 'Dados cadastrados'})
 
     // response.redirect('http://localhost:5500');
 });
