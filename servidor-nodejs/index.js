@@ -29,6 +29,8 @@ app.post('/cliente', (request, response) => {
     fs.writeFileSync('teste.json', JSON.stringify(request.body))
     response.status(200).json({status: 'Dados cadastrados'})
 
+    // response.status(200).send(new Date());
+
     // response.redirect('http://localhost:5500');
 });
 

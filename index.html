@@ -25,6 +25,10 @@
             border: solid 2px rgb(235, 132, 132);
             outline: solid 2px rgb(235, 132, 132);
         }
+
+        #btn-cl-now {
+
+        }
     </style>
 </head>
 
@@ -64,13 +68,16 @@
                         <h1 class="h1">Specialized, efficient, and thorough cleaning services</h1>
                         <p>We provide Performing cleaning tasks using the least amount of time, energy, and money.</p>
                         <div class="content-buttons">
-                            <a href="#" class="btn-green">Get Start Now</a>
+                            <a href="javascript:void(0)" id="btn-cl-now" class="btn-green" data-cl-start="now">Get Start Now</a>
                             <a href="#" class="btn-green btn-transparent teste">View all Services</a>
                         </div>
                     </div>
             </div>
         </div>
     </main>
+    <div id="dados-cep">
+        dfsfasdfasd
+    </div>
     <section class="services">
         <div class="container">
             <div class="clean-content">
@@ -176,6 +183,13 @@
     </div>
     </div>
 
+    <form id="form-cliente" method="post" action="http://localhost:3001/cliente">
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Nome:</label>
+            <input type="text" class="form-control" id="recipient-teste" name="nome">
+        </div>
+    </form>
+
     <!-- <script src="js/introducao.js"></script> -->
     <!-- <script src="js/calculos.js"></script> -->
     <!-- <script src="js/exercicio1.js"></script> -->
@@ -187,37 +201,72 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/send.form.js"></script>
 
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/lib.js"></script>
+    <script src="js/jquery.mask.js"></script>
+
     <script>
-        console.log('Primeira execução');
-        setTimeout(function(){console.log('Timer')}, 5000);
-        console.log('Segunda execução');
+        // $('[data-cl-start="now"]').click(function() {
+        //     console.log('Botão clicado')
+        // });
 
-        function myPromise(nota){
-            return new Promise(function(resolve, reject) {
 
-                nota >= 7 ? 
-                resolve('aprovado') 
-                : 
-                reject('Reprovado')
+        // console.log('Primeira execução');
+        // setTimeout(function(){console.log('Timer')}, 5000);
+        // console.log('Segunda execução');
+
+        // function myPromise(nota){
+        //     return new Promise(function(resolve, reject) {
+        //         if (nota >= 7) {
+        //             setTimeout(function(){
+        //                 resolve('aprovado') 
+        //             }, 5000);
+
+        //         } else {
+        //             reject('Reprovado')
+        //         }
                 
-            });
-        }
+        //     });
+        // }
+        // async function exec() {
+        //     try {
+        //         const teste = await myPromise(10);
+        //         console.log(teste);
+        //     }
+        //     catch(e) {
+        //         console.log(e);    
+        //     }
+        // }
+        // exec()
 
-        async function exec() {
-            try {
-                const teste = await myPromise(5);
-                console.log(teste);
-            }
-            catch(e) {
-                console.log(e);    
-            }
+
+        // setTimeout(function(){
+        //     const data = new Date()
+
+        //     const options = {
+        //         weekday: "long",
+        //         year: "numeric",
+        //         month: "long",
+        //         day: "numeric",
+        //     };
             
-        }
+        //     document.title = data.toLocaleDateString("pt-BR", options)
+        //     console.log(data.toLocaleDateString("pt-BR", options))
+        // }, 1000)
 
-        exec()
+        // let lista = 'celso@teste.com';
 
-        
+        // let busca = lista.indexOf('@')
+        // console.log(busca)
 
+        // let salario = 10548.978
+        // let ajuste = Math.round(10548.4)
+        // let convert = String(salario).replace('.',',')
+        // console.log(ajuste)
+
+        // let nome = '               celso             ';
+        // let limpa = nome.trim()
+        // console.log(nome.trim());
     </script>
 </body>
 </html>

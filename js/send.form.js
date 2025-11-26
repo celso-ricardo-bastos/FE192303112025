@@ -116,6 +116,15 @@
         xhr.send(json)
     }
 
+            // $.ajax({
+        //     method: "POST",
+        //     url: "http://localhost:3001/cliente",
+        //     data: {nome: nome.value, mensagem: mensagem.value}
+        // })
+        // .done(function( resposta ) {
+        //     console.log(resposta)
+        // });
+
 
 
     // let Pessoa = function(nome) {
